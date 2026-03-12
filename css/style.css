@@ -1,0 +1,373 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+body { background-color: #f9f1a5; } 
+
+
+.navbar {
+    background-color: #2d8a3e;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    position: sticky; top: 0; z-index: 1000;
+}
+
+
+
+.menu-container { position: relative; }
+#menu-toggle { display: none; } 
+.hamburger { font-size: 30px; cursor: pointer; }
+
+
+.nav-links {
+    display: none; 
+    position: absolute; right: 0; top: 45px;
+    background: white; border: 1px solid #ccc;
+    list-style: none; width: 150px;
+}
+
+.nav-links li a { 
+    display: block; padding: 15px; color: #2d8a3e; 
+    text-decoration: none; font-weight: bold; 
+}
+
+
+#menu-toggle:checked ~ .nav-links { display: block; }
+
+
+.hero-section {
+    position: relative; 
+    width: 100%;
+    height: 500px;     
+    overflow: hidden; 
+}
+
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+    font-family: 'Serif', Georgia, serif; 
+}
+.intro-text {
+    background-color: #f9f1a5; 
+    padding: 80px 10%;       
+    text-align: center;      
+    line-height: 1.8;        
+}
+
+.intro-text p {
+    margin-bottom: 20px;      
+    font-size: 1.2rem;       
+    max-width: 800px;  
+    line-height: 1.8;
+    max-width: 1200px;      
+    margin-left: auto;        
+    margin-right: auto;
+}
+.curiosita-section {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    margin-top: 50px; 
+}
+
+.curiosita-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; 
+}
+
+.curiosita-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%; 
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.curiosita-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Serif', Georgia, serif; 
+}
+
+.curiosita-content p {
+    color: white;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;                            
+    padding: 60px 10%;                    
+    background-color: #f9f1a5;             
+}
+
+
+.card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card img {
+    width: 100%;
+    height: 250px;       
+    object-fit: cover;   
+}
+
+
+.card-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.location {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin: 0;
+}
+.ristoranti-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ristoranti-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.ristoranti-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ristoranti-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.ristoranti-content p {
+    color: white;
+    max-width: 700px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+
+.chiusura-text {
+    background-color: #f9f1a5;
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.chiusura-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+
+.footer-main {
+    background-color: #2d8a3e; 
+    padding: 80px 5%;
+    min-height: 300px; 
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: fit-content;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.detail-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 0 8%;
+    color: white;
+}
+
+.detail-content {
+    flex: 1.2;
+    padding-right: 60px;
+}
+
+
+.detail-image-box {
+    flex: 1;
+}
+
+.detail-image-box img {
+    width: 100%;
+    border-radius: 15px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+
+.main-title {
+    font-size: 5rem; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.catania-bg, .siracusa-bg { background-color: #2d8a3e; } 
+.palermo-bg, .messina-bg { background-color: #5d4037; }  
+.city-name1 {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 3.5rem;  
+    color: #4a2c2a;      
+    font-weight: bold;
+    display: block;     
+    margin-bottom: 0;    
+}
+
+.main-title {
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 3rem;
+    color: white;
+    margin-top: -10px;   
+    text-transform: uppercase;
+}
+.city-name2{
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 3.5rem;  
+    color: #2d8a3e;      
+    font-weight: bold;
+    display: block;     
+    margin-bottom: 0;    
+}
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .main-title {
+        font-size: 3.5rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .intro-text, .chiusura-text {
+        padding: 50px 5%;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+
+    
+    .detail-container {
+        flex-direction: column; 
+        padding: 100px 5% 50px 5%;
+        text-align: center;
+    }
+
+    .detail-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .city-name {
+        font-size: 2rem;
+    }
+
+    .curiosita-section, .ristoranti-section {
+        height: auto;
+        padding: 60px 5%;
+    }
+}
