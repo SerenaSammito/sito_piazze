@@ -32,6 +32,15 @@ body { background-color: #f9f1a5; }
     display: block; padding: 15px; color: #2d8a3e; 
     text-decoration: none; font-weight: bold; 
 }
+.logo a {
+    color: white;             
+    text-decoration: none;    
+    font-weight: inherit;     
+}
+
+.logo a :hover:hover {
+    opacity: 0.8;            
+}
 
 
 #menu-toggle:checked ~ .nav-links { display: block; }
@@ -159,6 +168,17 @@ body { background-color: #f9f1a5; }
     display: flex;
     flex-direction: column;
 }
+.card {
+    /* Mantiene tutti i tuoi stili attuali */
+    text-decoration: none; /* Rimuove la sottolineatura del testo */
+    color: inherit;        /* Mantiene i colori del testo uguali a prima */
+    cursor: pointer;       /* Mostra la manina quando ci passi sopra */
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 
 
 .card img {
@@ -267,7 +287,7 @@ body { background-color: #f9f1a5; }
     min-height: 100vh;
     align-items: center;
     padding: 0 8%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .detail-content {
@@ -298,12 +318,12 @@ body { background-color: #f9f1a5; }
     line-height: 1.6;
 }
 
-.catania-bg, .siracusa-bg { background-color: #2d8a3e; } 
-.palermo-bg, .messina-bg { background-color: #5d4037; }  
+.catania-bg, .siracusa-bg { background-color: #f9f1a5; } 
+.palermo-bg, .messina-bg { background-color:#f9f1a5; }  
 .city-name1 {
     font-family: Georgia, 'Times New Roman', serif; 
     font-size: 3.5rem;  
-    color: #4a2c2a;      
+    color: #2d8a3e;            
     font-weight: bold;
     display: block;     
     margin-bottom: 0;    
@@ -312,7 +332,7 @@ body { background-color: #f9f1a5; }
 .main-title {
     font-family: 'Arial Black', sans-serif; 
     font-size: 3rem;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: -10px;   
     text-transform: uppercase;
 }
